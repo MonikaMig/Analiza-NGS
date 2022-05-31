@@ -5,6 +5,23 @@
 ├── original_files
 │   ├── gen_refer.fna
 │   ├── gen_refer.fna.fai
+│   ├── S_cerevisiae_chromosome
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.I.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.II.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.III.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.IV.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.IX.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.V.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.VI.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.VII.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.VIII.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.X.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XI.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XII.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XIII.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XIV.fa.gz
+│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XV.fa.gz
+│   │   └── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XVI.fa.gz
 │   ├── SRR064545_1.fastq.gz
 │   ├── SRR064545_2.fastq.gz
 │   ├── SRR064546_1.fastq.gz
@@ -13,6 +30,7 @@
 │   └── SRR064547_2.fastq.gz
 ├── results
 │   ├── mapping
+│   │   ├── mapping_hisat2.txt
 │   │   ├── SRR064545.bam
 │   │   ├── SRR064545_flagstat.txt
 │   │   ├── SRR064545_sort.bam
@@ -94,7 +112,8 @@
 │       ├── venn2.positions.pdf
 │       ├── venn2.snps.pdf
 │       └── venn3.pdf
-└── src
+└── src_
+    ├── data_download.txt
     ├── genref_download.sh
     ├── hisat2.sh
     ├── quality_control1.sh
@@ -103,6 +122,36 @@
     ├── sam_stats.sh
     ├── samtools.sh
     ├── snpeff.sh
-    ├── triming.sh
+    ├── trimmo.txt
     ├── variant_calling.sh
-    └── vcftoolz_kody.txt
+    └── vcftoolz.txt
+## src
+```bash
+└── src_
+    ├── data_download.txt
+    ├── genref_download.sh
+    ├── hisat2.sh
+    ├── quality_control1.sh
+    ├── quality_control2.sh
+    ├── sam_sort.sh
+    ├── sam_stats.sh
+    ├── samtools.sh
+    ├── snpeff.sh
+    ├── trimmo.txt
+    ├── variant_calling.sh
+    └── vcftoolz.txt
+
+## Used scripts:
+* data_download.txt - download of SRA samples
+* genref_download.sh - downloading reference genome from ENSEMBL
+* hisat2.sh - mapping samples to reference genome with hisat2
+* quality_control1.sh - quality control with fastqc
+* quality_control2.sh - quality control with fastqc after trimming
+* sam_sort.sh - sorting bams
+* sam_stats.sh - stats for bams; data after mapping and sorting
+* samtools.sh - samtools was used to get .bam files (binary substitute for .sam files), falgstat - counts the number of alignments for each FLAG type
+* snpeff.sh - download for snpEff R64-1-1.105 database annotation and annotation of variants with use of snpEff
+* trimmo.txt - quality upgrade with Trimmomatic
+* variant_calling.sh - variant detection with bcftools
+* vcftoolz.txt - comprae (find the similarites and differences between VCF files); count (command counts samples, positions, calls, snps, indels, other variants, missing calls, and filter reasons); plot (the plot command shows a bar-chart of the locations of calls along the length of the genome; norrow (reformat the data into a tall and narrow format for easier viewing and to facilitate automated diff of files)
+   
