@@ -4,12 +4,12 @@
 Data: https://www.ncbi.nlm.nih.gov/sra/SRX025959[accn] <br>
 Project: “Pooled linkage analysis for discovery of Saccharomyces cerevisiae functional mutations by whole genome sequencing”
 
-SRA:SRP003355, Whole Genome Sequencing
-Experiments: 3 (3 samples)
-Runs: 3 (3.8Gbp; 2.5Gb)
-Organism: Saccharomyces cerevisiae
-Layout: PAIRED
-The purpose of this experiment was to identify mutated genes in vac6 and vac22 yeast mutants. 
+SRA:SRP003355, Whole Genome Sequencing<br>
+Experiments: 3 (3 samples)<br>
+Runs: 3 (3.8Gbp; 2.5Gb)<br>
+Organism: Saccharomyces cerevisiae<br>
+Layout: PAIRED<br>
+The purpose of this experiment was to identify mutated genes in vac6 and vac22 yeast mutants.<br> 
 
 
 ### Steps of analysis:
