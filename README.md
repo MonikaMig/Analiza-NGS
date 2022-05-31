@@ -125,6 +125,8 @@
     ├── trimmo.txt
     ├── variant_calling.sh
     └── vcftoolz.txt
+```
+
 ## src
 ```bash
 └── src_
@@ -140,7 +142,7 @@
     ├── trimmo.txt
     ├── variant_calling.sh
     └── vcftoolz.txt
-
+```
 ## Used scripts:
 * data_download.txt - download of SRA samples
 * genref_download.sh - downloading reference genome from ENSEMBL
