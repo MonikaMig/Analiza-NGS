@@ -1,0 +1,6 @@
+java -jar ~/ Trimmomatic-0.39/trimmomatic-0.39.jar PE -phred33 SRR064545_1.fastq.gz SRR064545_2.fastq.gz trimmed_5_1_paired.fastq trimmed_5_1_upaired.fastq trimed_5_1_paired.fastq trimmed_5_1_upaired.fastq SLIDINGWINDOW:4:20 MINLEN:20
+
+java -jar ~/ Trimmomatic-0.39/trimmomatic-0.39.jar PE -phred33 SRR064546_1.fastq.gz SRR064546_2.fastq.gz trimmed_6_1_paired.fastq trimmed_6_1_upaired.fastq trimed_6_1_paired.fastq trimmed_6_1_upaired.fastq SLIDINGWINDOW:4:20 MINLEN:20
+
+java -jar ~/ Trimmomatic-0.39/trimmomatic-0.39.jar PE -phred33 SRR064547_1.fastq.gz SRR064547_2.fastq.gz trimmed_7_1_paired.fastq trimmed_7_1_upaired.fastq trimed_7_1_paired.fastq trimmed_7_1_upaired.fastq SLIDINGWINDOW:4:20 MINLEN:20
+
