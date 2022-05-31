@@ -13,13 +13,13 @@ The purpose of this experiment was to identify mutated genes in vac6 and vac22 y
 
 
 ### Steps of analysis:
-A. Acquiring raw data - SRA repositorium
-B. Quality control - fastq
-C. Trimming - trimmomatic
-D. Quality control - fastq
-E. Comparison to the reference genome - hisat2
-F. Detection of polymorphisms - bcftools
-G. Biological sense and analysis of results
+A. Acquiring raw data - SRA repositorium<br>
+B. Quality control - fastq<br>
+C. Trimming - trimmomatic<br>
+D. Quality control - fastq<br>
+E. Comparison to the reference genome - hisat2<br>
+F. Detection of polymorphisms - bcftools<br>
+G. Biological sense and analysis of results<br>
 
 ### Steps in detail description:
 A. Acquiring raw data 
