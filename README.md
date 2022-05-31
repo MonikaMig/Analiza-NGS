@@ -1,33 +1,34 @@
 # Project NGS analysis and SNP variant detection
 ### Structure data
 ```bash
-./projekt
+/projekt
 ├── original_files
-│   ├── gen_refer.fna
-│   ├── gen_refer.fna.fai
-│   ├── S_cerevisiae_chromosome
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.I.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.II.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.III.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.IV.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.IX.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.V.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.VI.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.VII.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.VIII.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.X.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XI.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XII.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XIII.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XIV.fa.gz
-│   │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XV.fa.gz
-│   │   └── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XVI.fa.gz
 │   ├── SRR064545_1.fastq.gz
 │   ├── SRR064545_2.fastq.gz
 │   ├── SRR064546_1.fastq.gz
 │   ├── SRR064546_2.fastq.gz
 │   ├── SRR064547_1.fastq.gz
 │   └── SRR064547_2.fastq.gz
+├── reference_genom
+│   ├── gen_refer.fna
+│   ├── gen_refer.fna.fai
+│   └── S_cerevisiae_chromosome
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.I.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.II.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.III.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.IV.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.IX.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.V.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.VI.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.VII.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.VIII.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.X.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XI.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XII.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XIII.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XIV.fa.gz
+│       ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XV.fa.gz
+│       └── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XVI.fa.gz
 ├── results
 │   ├── mapping
 │   │   ├── mapping_hisat2.txt
@@ -125,6 +126,7 @@
     ├── trimmo.txt
     ├── variant_calling.sh
     └── vcftoolz.txt
+
 ```
 
 ## src
